@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-iZz4x6/zwB3Mjv6P9XljK1gW62Jb7qQH6q8TW5q5gU+Kj5qKcv1tXKxNQ0aoYF" crossorigin="anonymous">
+
+    < <link rel="stylesheet" href="css/arview.css">
+    <title>AR | PERI PERI ONION PIZZA</title>
+    <!--FAVICON-->
+    <link rel="icon" href="Img/logo/Round-White-alone.png">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <a class="btn zoom"><i class="fas fa-search-plus"></i></a>
+    <a class="btn zoom-out"><i class="fas fa-search-minus"></i></a>
+    <a class="btn zoom-init"><i class="fas fa-undo"></i></a>
+        <div class="test">
+            <model-viewer alt="PERI PERI ONION PIZZA" 
+                src="model/Peri peri Onion .glb"   
+                tone-mapping="commerce" 
+                shadow-intensity="1" 
+                camera-controls 
+                touch-action="pan-y"
+                auto-rotate ar>
+        
+            </model-viewer>
+        </div>
+    
+</body>
+<script src="js/button.js"></script>
+</html>
