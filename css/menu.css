@@ -1,0 +1,312 @@
+/* Default CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyMenu {
+    background-color: #f39c12;
+    background-image: url(Img/Bg\ Vector.png);
+    justify-content: center;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+/* NavBar START */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.navBar img{
+    width: 90px;
+    height: 80px;
+}
+
+.navBar input {
+    height: 40px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+.NavArBTN {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .navBar input {
+        display: none;
+    }
+
+    .NavArBTN {
+        display: block;
+        border: none;
+        margin-right: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 15px !important;
+        text-align: center;
+        background-color: #000000;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+/* NavBar END */
+
+/* Main Body START */
+
+.ArBtn {
+    text-align: center;
+}
+
+.ArBtn button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #f39c12;
+    font-weight: bold;
+    box-shadow: -4px 5px black;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.ArBtn button:hover {
+    box-shadow: -5px 6px white;
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+    .ArBtn {
+        display: none;
+    }
+}
+
+/* Fliter Button SATRT */
+
+.filterBtn-Box{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.filterBtn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 5px black;
+    transition: .7s;
+}
+
+.filterBtn:hover,
+.btn-clicked 
+{
+    border: 3px solid white;
+    background-color: #f39c12;
+    color: white;
+}
+
+.filterBtn:hover {
+    transform: scale(0.94);
+}
+
+@media (min-width: 426px) and (max-width: 600px) {
+    .filterBtn {
+        width: 100px;
+    }
+}
+
+@media (max-width: 425px) {
+    .filterBtn {
+        width: 70px;
+        font-size: 10px;
+        margin: 3px;
+    }
+}
+
+/* Fliter Button SATRT */
+
+/* Product Cards START */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuCard {
+    width: 325px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    min-height: 500px;
+    transition: all .5s;
+}
+
+
+.menuCard:hover {
+    transform: scale(1.05);
+}
+ 
+.menuImg {
+    position: relative;
+}
+
+.menuCard img {
+    width: 100%;
+    height: auto;
+    border: 4px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+
+.menuCard:hover img {
+    margin-bottom: 15px;
+}
+
+.topping  {
+    border: none !important;
+    width: 300px !important;
+    height: 300px !important;
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    transform: scale(0);
+    transition: .8s !important;
+}
+
+.menuCard:hover .topping {
+    transform: scale(1);
+}
+
+.cardContent {
+    padding: 15px;
+}
+
+.cardContent h3 {
+    position: absolute;
+    font-size: 20px;
+    border: 2px solid #f39c12;
+    border-radius: 4px;
+    padding: 5px 20px;
+    background-color: white;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: .5s;
+    width: 225px;
+    text-align: center;
+}
+
+.menuCard:hover .cardContent h3 {
+    top: 45%;
+}
+
+.ratingBox {
+    display: flex;
+    justify-content: center;
+}
+
+.startRating {
+    font-size: 20px;
+    margin: 0;
+    color: green;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ratingBox span {
+    font-size: 20px;
+    transform: translateX(140px);
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.ratingBox span:hover {
+    color: red;
+}
+
+.menuCard:hover .ratingBox span {
+    opacity: 1;
+    transform: translateX(100px);
+}
+
+.menuDis {
+    text-align: justify;
+}
+
+.cardContent button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -40px;
+    left: 85px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    transform: translatey(20px);
+    opacity: 0;
+}
+
+.cardContent button:hover {
+    background-color: white;
+    color: #f39c12;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.menuCard:hover .cardContent button {
+    bottom: -20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .cardContent h3 {
+        top: 45%;
+    }
+    .menuCard img {
+        margin-bottom: 20px;
+    }
+    .cardContent button {
+        bottom: -20px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .ratingBox span {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+
+/* Product Cards END */
+
+/* Main Body END */
